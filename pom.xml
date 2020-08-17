@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.rao</groupId>
     <artifactId>usermanagement</artifactId>
-    <version>1.0</version>
     <name>usermanagement</name>
     <description>Demo project for Spring Boot</description>
 
