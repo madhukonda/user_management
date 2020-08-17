@@ -1,4 +1,3 @@
--v /var/run/docker.sock:/var/run/docker.sock
 FROM java:8
 LABEL EMAIL="kmraomca@gmail.com"
 EXPOSE 8080
