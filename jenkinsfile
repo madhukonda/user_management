@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('clone source') {
-            steps {
-            git url: 'https://github.com/madhukonda/user_management.git'        
-                 }
-              }   
+          
 stage('Build') {
             steps {
                 echo 'Building..'
