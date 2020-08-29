@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
             steps {
                 echo 'Building The Project.'
-               sh mvn clean install -DksipTests
+               sh 'mvn clean install -DksipTests'
                 
             }
         }
