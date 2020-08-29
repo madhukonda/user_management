@@ -4,17 +4,19 @@ pipeline {
     stage('Build') {
             steps {
                 echo 'Building The Project.'
+                mvn clean install -DksipTests
                 
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                mvn clean test
             }
         }
-        stage('Deploy') {
+        stage('Build and Publish Docker Image') {
             steps {
-                echo 'Deploying....'
+                echo 'Builiding teh Docker Image....'
             }
         }
     }
